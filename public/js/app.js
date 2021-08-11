@@ -1,11 +1,3 @@
-console.log("js file client side is loaded");
-
-// async function callAPI() {
-//   const response = await fetch("https://puzzle.mead.io/puzzle");
-//   const data = await response.json();
-//   console.log(data);
-// }
-
 const weatherForm = document.querySelector("form");
 const search = document.querySelector("input");
 const messageOne = document.querySelector("#message-1");
