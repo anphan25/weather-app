@@ -10,11 +10,11 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        `${body.current.weather_descriptions[0]} It is currently ${
+        `${body.current.weather_descriptions[0]} It is currently ${Math.round(
           (body.current.temperature - 32) / 1.8
-        } degrees out. It feels like ${
+        )} degrees out. It feels like ${Math.round(
           (body.current.feelslike - 32) / 1.8
-        } degress out`
+        )} degress out`
       );
     }
   });
