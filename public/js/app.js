@@ -21,5 +21,5 @@ weatherForm.addEventListener("submit", (e) => {
   const location = search.value;
   messageOne.textContent = "loading...";
   messageTwo.textContent = "";
-  forecast(`http://localhost:3000/weather?address=${location}`);
+  forecast(`/weather?address=${location}`);
 });
